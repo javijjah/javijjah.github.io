@@ -1,10 +1,13 @@
 :root {
-    --maincolor: lightblue;
+    --maincolor: #0d6efd;
+    --lightmaincolor:#0dcaf0;
     --accentcolor: #baf2bb;
     --borders: 1px solid black;
+    --borderperfil:solid 0.5rem white;
     --textcolor: black;
     --headerfont: Abel;
 }
+
 
 @font-face {
     font-family: Abel;
@@ -15,6 +18,7 @@ body {
     margin: 0;
     padding: 0;
     word-wrap: break-word;
+    text-align: center;
 }
 
 #gencont {
@@ -23,7 +27,6 @@ body {
 }
 
 #sidebar {
-    background-color: var(--maincolor);
     position: sticky;
 }
 
@@ -61,7 +64,7 @@ ul a:hover {
 }
 .fotoperfil{
     border-radius: 50%;
-    border:solid 0.2rem white;
+    border:var(--borderperfil);
     height:50vh;
     width: auto;
 }
@@ -77,7 +80,22 @@ ul a:hover {
     background-size: cover;
     padding:5rem;
 }
-
 #titulo{
     color:rgb(73, 73, 73);
+}
+
+#sobremi{
+    background-color:var(--maincolor);
+    padding:5%;
+    color:white;
+}
+#sobremi div{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    padding:5%;
+}
+#sobremi h3{
+    width:20%;
 }
