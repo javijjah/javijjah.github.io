@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,10 +14,12 @@
   <link href="styles/bootstrap.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="js/bootstrap.js"></script>
   <title>Javi's Portfolio</title>
   <link rel="icon" type="image/x-icon" href="/img/logo.svg" />
 </head>
+
 <body>
   <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
     <div class="container-fluid">
@@ -144,13 +147,22 @@
     </section>
     <section id="portfolio">
       <h3>Portfolio</h3>
+      <div id="opc"><label for="cars">Escoja un lenguaje:</label><select id="lang" name="langlist" form="langform">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">Javascript</option>
+        <option value="nodeJS">NodeJS</option>
+      </select>
+    </div>
       <div class="contenedorCartas">
         <div class="card">
           <h4>Portfolio</h4>
           <p><img src="img/logo.svg"></p>
           <p>Esta misma página</p>
-          <span class="HTML"></span>
-          <span class="CSS"></span>
+          <div class="spans">
+          <span class="HTML"><i class="fa-brands fa-html5 fa-2xl"></i></span>
+          <span class="CSS"><i class="fa-brands fa-css3 fa-2xl"></i></span>
+        </div>
         </div>
         <div class="card">
           <h4>M.A.P</h4>
@@ -158,6 +170,11 @@
           <p>Un proyecto de reivindicación
             de la salud mental.
           </p>
+          <div class="spans">
+            <span class="HTML"><i class="fa-brands fa-html5 fa-2xl"></i></span>
+            <span class="CSS"><i class="fa-brands fa-css3 fa-2xl"></i></span>
+            <span class="Javascript"><i class="fa-brands fa-js fa-2xl"></i></span>
+          </div>
         </div>
         <div class="card">
           <h4>Connectify</h4>
@@ -165,7 +182,14 @@
           <p>Una plataforma
             para exportar tus playlists
           </p>
+          
+        <div class="spans">
+          <span class="HTML"><i class="fa-brands fa-html5 fa-2xl"></i></span>
+          <span class="CSS"><i class="fa-brands fa-css3 fa-2xl"></i></span>
+          <span class="Javascript"><i class="fa-brands fa-js fa-2xl"></i></span>
+          <span class="NodeJS"><i class="fa-brands fa-node-js fa-2xl"></i></span>
         </div>
+      </div>
       </div>
     </section>
   </div>

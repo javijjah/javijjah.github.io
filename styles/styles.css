@@ -60,6 +60,7 @@ nav ul li {
   justify-content: space-evenly;
   align-items: center;
 }
+
 ul a {
   font-size: 3rem !important;
   color: var(--textcolor) !important;
@@ -70,6 +71,7 @@ ul a {
 ul a:hover {
   color: blue !important;
 }
+
 .fotoperfil {
   border-radius: 50%;
   border: var(--borderperfil);
@@ -89,6 +91,7 @@ ul a:hover {
   background-size: cover;
   padding: 5rem;
 }
+
 #titulo {
   color: rgb(73, 73, 73);
 }
@@ -98,6 +101,7 @@ ul a:hover {
   padding: 5%;
   color: white;
 }
+
 #presentacion div {
   display: flex;
   width: 100%;
@@ -106,12 +110,15 @@ ul a:hover {
   padding: 5%;
   flex-wrap: wrap;
 }
+
 #presentacion div h3 {
   width: 50%;
 }
+
 #presentacion img {
   width: 30%;
 }
+
 #presentacion h3 {
   width: 20%;
 }
@@ -126,11 +133,13 @@ ul a:hover {
   background-color: #baf2bb;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='364' height='364' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%23008db1' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%2300abd0' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%23008db1' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%2300abd0' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%230DCAF0' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%23004bd1' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23005ce7' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%230D6EFD' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23005ce7' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%23004bd1' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%230D6EFD' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%23004bd1' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%230D6EFD' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23005ce7' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%230D6EFD' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
 }
+
 .caja {
   background-color: whitesmoke;
   border-radius: 20px;
   padding: 5%;
 }
+
 .apartado {
   background-color: var(--lightmaincolor);
   margin: 2rem;
@@ -138,9 +147,11 @@ ul a:hover {
   border-radius: 5px;
   padding: 2rem;
 }
+
 .list-group * {
   background-color: var(--accentcolor);
 }
+
 #divisor {
   display: flex;
   justify-content: space-evenly;
@@ -148,41 +159,59 @@ ul a:hover {
   flex-wrap: wrap;
   gap: 3rem;
 }
-#divisor > div {
+
+#divisor>div {
   border: solid 0.3rem var(--accentcolor);
   padding: 3%;
 }
-#portfolio{
+
+#portfolio {
   background-color: darkslateblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   padding: 5%;
-  color:white;
+  color: white;
   gap: 2rem;
 }
-.contenedorCartas{
+
+.contenedorCartas {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
   flex-wrap: wrap;
-  gap:3rem;
+  gap: 3rem;
 }
-.card{
+
+.card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  color:black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: black;
   padding: 5%;
   width: 35%;
   box-shadow: 0.5rem 0.5rem 0.9rem black;
   max-height: 50%;
-  gap:2rem;
+  gap: 2rem;
 }
 
-.card img{
+.card img {
   width: 100%;
   height: auto;
+}
+
+#lang {
+  width: 60%;
+}
+
+#opc {
+  width: 80%;
+}
+
+.spans{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
 }
