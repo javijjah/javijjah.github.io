@@ -16,7 +16,6 @@
 body {
   margin: 0;
   padding: 0;
-  word-wrap: break-word;
   text-align: center;
 }
 
@@ -101,6 +100,9 @@ ul a:hover {
   align-items: center;
   padding: 5%;
 }
+#sobremi div img{
+    width: 20%;
+  }
 #sobremi h3 {
   width: 20%;
 }
