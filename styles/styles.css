@@ -45,7 +45,7 @@ body {
 }
 
 #navbar {
-  background-color: var(--accentcolor);
+  background-color:rgba(186, 242, 187, 1);
   border-bottom: var(--borders);
 }
 
@@ -122,6 +122,7 @@ ul a:hover {
 #presentacion img {
   width: 30%;
   animation:floating 4s infinite;
+  animation-delay: 0s;
 }
 
 #presentacion h3 {
@@ -244,6 +245,10 @@ legend {
   animation:lista 0.5s linear;
   animation-fill-mode: forwards;
 }
+.card:hover{
+  animation:tiempodes 2s linear;
+  animation-fill-mode: forwards;
+}
 @keyframes floating {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -259,7 +264,6 @@ legend {
 	}
 }
 
-}
 @keyframes lista {
   from{background-color: var(--accentcolor);}
   to{ background-color: salmon;
