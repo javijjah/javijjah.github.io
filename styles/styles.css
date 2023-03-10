@@ -249,6 +249,11 @@ legend {
   animation:tiempodes 2s linear;
   animation-fill-mode: forwards;
 }
+
+#sobremi>div:nth-child(odd):hover{
+animation:divfondo 1s linear;
+animation-fill-mode: forwards;
+}
 @keyframes floating {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -266,6 +271,12 @@ legend {
 
 @keyframes lista {
   from{background-color: var(--accentcolor);}
-  to{ background-color: salmon;
+  to{ background-color: white;
+  color:var(--maincolor);
     transform: scale(1.1);}
+}
+@keyframes divfondo{
+from{background-color:white;}
+to{background-color:var(--maincolor);
+color:white;}
 }
