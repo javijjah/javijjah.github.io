@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="js/bootstrap.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
   <title>Javi's Portfolio</title>
   <link rel="icon" type="image/x-icon" href="/img/logo.svg" />
 </head>
@@ -153,15 +153,14 @@
     </section>
     <section id="portfolio">
       <h1>Portfolio</h1>
-      <div id="opc"><label for="cars">Escoja un lenguaje:</label><select id="lang" name="langlist" form="langform">
-        <option value="HTML">HTML</option>
-        <option value="CSS">CSS</option>
-        <option value="Javascript">Javascript</option>
-        <option value="nodeJS">NodeJS</option>
-      </select>
-    </div>
-      <div class="contenedorCartas">
-        <div class="card">
+      <select id="language-filter">
+  <option value="all">Todos los lenguajes</option>
+  <option value="javascript">JavaScript</option>
+  <option value="HTML">HTML</option>
+  <option value="CSS">CSS</option>
+</select>
+<div class="contenedorCartas">
+        <div class="card" data-language="HTML">
           <h4>Portfolio</h4>
           <p><img src="img/logo.svg"></p>
           <p>Esta misma página</p>
@@ -170,7 +169,7 @@
           <span class="CSS"><i class="fa-brands fa-css3 fa-2xl"></i></span>
         </div>
         </div>
-        <div class="card">
+        <div class="card" data-language="CSS">
           <h4>M.A.P</h4>
           <p><img src="img/logo-map.webp"></p>
           <p>Un proyecto de reivindicación
@@ -182,7 +181,7 @@
             <span class="Javascript"><i class="fa-brands fa-js fa-2xl"></i></span>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-language="javascript">
           <h4>Connectify</h4>
           <p><img src="img/spotify.png"></p>
           <p>Una plataforma
@@ -196,6 +195,7 @@
         </div>
       </div>
       </div>
+
     </section>
     <section id="contacto">
 <div id="contact" class="container">
